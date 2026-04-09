@@ -5,7 +5,7 @@ Tiny Playwright helper that opens iClicker, lets you log in, then continuously p
 ## Run
 
 ```bash
-python playwright_monitor.py
+python clicker.py
 ```
 
 ## Flags
