@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clickernet"
+version = "0.1.0"
+description = "Tiny Playwright helper for polling and clicking an iClicker selector."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright>=1.40,<2",
+]
+
+[project.scripts]
+clickernet = "clicker:main"
+
+[tool.setuptools]
+py-modules = ["clicker"]

@@ -2,17 +2,26 @@
 
 Tiny Playwright helper that opens iClicker, lets you log in, then continuously polls for a selector and clicks it when found.
 
+## Install
+
+```bash
+python -m pip install -e .
+python -m playwright install chromium
+```
+
 ## Run
 
 ```bash
-python clicker.py
+clickernet
 ```
 
 Example with spoofed browser geolocation:
 
 ```bash
-python clicker.py --latitude 37.7749 --longitude -122.4194 --accuracy 50
+clickernet --latitude 37.7749 --longitude -122.4194 --accuracy 50
 ```
+
+You can still run `python clicker.py` directly if you prefer.
 
 ## Flags
 

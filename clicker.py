@@ -156,7 +156,7 @@ def parse_args() -> argparse.Namespace:
     return args
 
 
-if __name__ == "__main__":
+def main() -> None:
     args = parse_args()
     geolocation = None
     if args.latitude is not None and args.longitude is not None:
@@ -174,3 +174,7 @@ if __name__ == "__main__":
             geolocation=geolocation,
         )
     )
+
+
+if __name__ == "__main__":
+    main()
